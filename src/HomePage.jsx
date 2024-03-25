@@ -31,12 +31,17 @@ const HomePage = () => {
   const [error, setError] = useState('');
 
   const imageUrls = [
-    "/src/Home/images/im1.jpeg",
-    "/src/Home/images/im2.jpeg",
-    "/src/Home/images/im3.jpeg",
-    "/src/Home/images/im4.jpeg",
-    "/src/Home/images/im5.jpeg",
-    "/src/Home/images/im6.jpeg"
+    "/src/Home/images/im1.jpeg",  // Vincent
+    "/src/Home/images/im2.jpeg",  // Allan
+    "/src/Home/images/im3.jpeg",  // Francis
+    "/src/Home/images/im4.jpeg",  // Mbuvi
+    "/src/Home/images/im5.jpeg",  // Mary
+    "/src/Home/images/im6.jpeg",  // Jane
+    "/src/Home/images/im3.jpeg",  // Alex
+    "/src/Home/images/im8.jpeg",  // Jack
+    "/src/Home/images/im9.jpeg",  // Emma
+    "/src/Home/images/im1.jpeg",  // Sophia
+    "/src/Home/images/im1.jpeg",  // William
   ];
   const buttonTexts = [
     "Vincent",
@@ -44,16 +49,25 @@ const HomePage = () => {
     "Francis",
     "Mbuvi",
     "Mary",
-    "Jane"
+    "Jane",
+    "Alex",
+    "Jack",
+    "Emma",
+    "Sophia",
+    "William",
   ];
   const extraTexts = [
     { title: "Marketer", paragraph: "Vincent is a dedicated marketer. He leads our marketing efforts and ensures our products reach the right audience." },
     { title: "Designer", paragraph: "Allan is our talented designer. He is responsible for creating stunning designs and user interfaces." },
     { title: "Developer", paragraph: "Francis is a skilled developer. He specializes in backend development and ensures our applications run smoothly." },
-   
     { title: "CEO", paragraph: "Mbuvi is the CEO of our company. He leads the executive team and oversees the overall operations." },
     { title: "HR Manager", paragraph: "Mary is our HR Manager. She oversees all human resource activities and ensures a positive work environment." },
-    { title: "Product Manager", paragraph: "Jane is our Product Manager. She leads product development and ensures our products meet customer needs." }
+    { title: "Product Manager", paragraph: "Jane is our Product Manager. She leads product development and ensures our products meet customer needs." },
+    { title: "Sales Manager", paragraph: "Alex is our Sales Manager. He leads the sales team and drives revenue growth." },
+    { title: "Customer Support", paragraph: "Jack is our Customer Support Manager. He ensures our customers receive excellent service." },
+    { title: "Operations Manager", paragraph: "Emma is our Operations Manager. She oversees daily operations and ensures efficiency." },
+    { title: "Marketing Specialist", paragraph: "Sophia is our Marketing Specialist. She implements marketing strategies to promote our products." },
+    { title: "Software Engineer", paragraph: "William is a Software Engineer. He develops software solutions to meet business needs." },
   ];
 
   const handleSearch = (e) => {
@@ -83,9 +97,13 @@ const HomePage = () => {
       <NavBar handleSearch={handleSearch} />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {searchQuery === '' ? (
-          imageUrls.map((url, index) => (
+          buttonTexts.map((buttonText, index) => (
             <div key={index}>
-              <ImageWithButton imageUrl={url} buttonText={buttonTexts[index]} />
+              <ImageWithButton
+                imageUrl={imageUrls[index]}
+                buttonText={buttonText}
+                extraText={extraTexts[index]}
+              />
             </div>
           ))
         ) : memberIndex !== -1 && (
@@ -104,8 +122,3 @@ const HomePage = () => {
 }
 
 export default HomePage;
-
-
-
-
-

@@ -4,7 +4,7 @@ import { FaUserGroup } from 'react-icons/fa6';
 import Contact from './Contact';
 import EventForm from '../EventsForm';
 import Membership from './Membership';
-import HomePage from './images/HomePage';
+import HomePage from '../HomePage';
 import Finance from './Finance';
 import Campaign from './Campaign';
 
