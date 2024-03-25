@@ -14,7 +14,7 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row">
+    <div className="flex flex-col md:flex">
       {isLoggedIn && <Sidebar />}
       <LoginForm isLoggedIn={isLoggedIn} onLogin={handleLogin} onLogout={handleLogout} />
     </div>

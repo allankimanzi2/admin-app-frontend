@@ -104,7 +104,7 @@ const HomePage = () => {
               <ImageWithButton
                 imageUrl={imageUrls[index]}
                 buttonText={buttonText}
-                extraText={extraTexts[index]}
+                // extraText={extraTexts[index]}
               />
             </div>
           ))
@@ -124,3 +124,23 @@ const HomePage = () => {
 }
 
 export default HomePage;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
