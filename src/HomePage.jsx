@@ -31,18 +31,20 @@ const HomePage = () => {
   const [error, setError] = useState('');
 
   const imageUrls = [
-    "/src/Home/images/im1.jpeg",  // Vincent
-    "/src/Home/images/im2.jpeg",  // Allan
-    "/src/Home/images/im3.jpeg",  // Francis
-    "/src/Home/images/im4.jpeg",  // Mbuvi
-    "/src/Home/images/im5.jpeg",  // Mary
-    "/src/Home/images/im6.jpeg",  // Jane
-    "/src/Home/images/im3.jpeg",  // Alex
-    "/src/Home/images/im8.jpeg",  // Jack
-    "/src/Home/images/im9.jpeg",  // Emma
-    "/src/Home/images/im1.jpeg",  // Sophia
-    "/src/Home/images/im1.jpeg",  // William
+    "https://st4.depositphotos.com/12985790/23389/i/450/depositphotos_233890500-stock-photo-portrait-handsome-businessman-formal-wear.jpg",  // Vincent
+    "https://t4.ftcdn.net/jpg/02/14/74/61/360_F_214746128_31JkeaP6rU0NzzzdFC4khGkmqc8noe6h.jpg",  // Allan
+    "https://static.vecteezy.com/system/resources/thumbnails/031/725/956/small_2x/ai-generated-studio-portrait-of-handsome-indian-man-on-colour-background-photo.jpg",  // Francis
+    "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg&ga=GA1.1.2082370165.1711238400&semt=sph",  // Mbuvi
+    "https://st4.depositphotos.com/12985790/23389/i/450/depositphotos_233890500-stock-photo-portrait-handsome-businessman-formal-wear.jpg",  // Mary
+    "https://t3.ftcdn.net/jpg/02/00/90/24/360_F_200902415_G4eZ9Ok3Ypd4SZZKjc8nqJyFVp1eOD6V.jpg",  // Jane
+    "https://st4.depositphotos.com/12985790/23389/i/450/depositphotos_233890500-stock-photo-portrait-handsome-businessman-formal-wear.jpg",  // Alex
+    "https://st4.depositphotos.com/12985790/23389/i/450/depositphotos_233890500-stock-photo-portrait-handsome-businessman-formal-wear.jpg",  // Jack
+    "https://t3.ftcdn.net/jpg/02/00/90/24/360_F_200902415_G4eZ9Ok3Ypd4SZZKjc8nqJyFVp1eOD6V.jpg",  // Emma
+    "https://st4.depositphotos.com/12985790/23389/i/450/depositphotos_233890500-stock-photo-portrait-handsome-businessman-formal-wear.jpg",  // Sophia
+    "https://st4.depositphotos.com/12985790/23389/i/450/depositphotos_233890500-stock-photo-portrait-handsome-businessman-formal-wear.jpg",  // William
   ];
+  ;
+  ;
   const buttonTexts = [
     "Vincent",
     "Allan",
