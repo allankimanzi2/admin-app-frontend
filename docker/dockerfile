@@ -1,7 +1,8 @@
 # Use official Node.js image as base
-FROM node:18-alpine
-WORKDIR /app
+FROM node:18-alpine AS buildFiles
+WORKDIR /usr/src/app
 COPY . .
-RUN yarn install --production
-CMD ["node", "src/index.js"]
-EXPOSE 3000
+RUN npm install 
+CMD npm run build
+FROM nginx:stable
+COPY --from=buildFiles /usr/src/app/dist/react-app /usr/share/nginx/html
